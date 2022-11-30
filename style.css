@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto';
+    font-size: 18px;
+}
+
+header {
+    position: relative;
+}
+
+.hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 100vh;
+}
+
+.hero-img-1 {
+    background-image: url(./assets/img-1.jpg);
+}
+
+.hero-img-2 {
+    background-image: url(./assets/img-2.jpg);
+}
+
+.hero-body{
+    width: 100%;
+    color: #FFF;
+    position: absolute;
+    bottom: 140px;
+    text-align: center;
+    font-family: 'roboto';
+}
+
+.hero-title {
+	font-family: 'Modern Antiqua';
+	font-size: 50px;
+	margin-bottom: 12px;
+}
+
+.hero-date {
+	font-size: 28px;
+	font-style: initial;
+	margin-top: -10px;
+    margin-bottom: 4px;
+}
+
+.hero-guest {
+    margin-top: 4px;
+    margin-bottom: 12px;
+    font-size: 26px;
+}
+
+.button-open {
+    background-color: #7a7171;
+    color: #FFF;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 8px 32px;
+    margin: auto;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.section-1 {
+    padding: 50px 0 70px;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col>h2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 28px;
+    color: #000000;
+}
+
+.col>p {
+    text-align: center;
+}
+
+.bride-photo {
+    position: relative;
+    margin: 50px;
+}
+
+.bride-photo>img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+} 
+
+.bride-name {
+    font-size: 28px;
+}
+
+.bride-detail {
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+.bride-parent {
+    font-weight: bold;
+}
+
+.bride-address {
+    margin-top: 12px;
+}
