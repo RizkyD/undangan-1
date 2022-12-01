@@ -309,3 +309,12 @@ header {
 .image-preview .image img {
     width: 100%;
 }
+
+.our-story video {
+    width: 100%;
+    min-height: 250px;
+}
+
+.section-5 {
+    padding: 5rem .85rem;
+}
