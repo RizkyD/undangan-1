@@ -105,3 +105,35 @@ function showNextImage() {
     imgElement.src = newImage.src
     imgElement.alt = newImage.alt
 }
+
+/*
+    Copy No Rekening
+*/
+const BNI = '012345678987654321'
+const BCA = '0123456789'
+
+const copyNoRekeningElements = document.querySelectorAll('[data-bank]')
+
+copyNoRekeningElements.forEach(copyNoRekeningElement => {
+    copyNoRekeningElement.addEventListener('click', e => {
+        const noRek = getNoRekeningByBank(e)
+
+        navigator.clipboard.writeText(noRek);
+
+        new Alert(e.target.getAttribute('data-bank')).show()
+    })
+})
+
+function getNoRekeningByBank(e) {
+    const bank = e.target.getAttribute('data-bank')
+
+    if (bank.toLowerCase() === 'bni') {
+        return BNI
+    }
+
+    if (bank.toLowerCase() === 'bca') {
+        return BCA
+    }
+
+    return ''
+}

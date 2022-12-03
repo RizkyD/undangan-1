@@ -141,7 +141,8 @@ header {
 */
 .section-2 {
     padding: 5rem .85rem;
-    background-color: #eaeaea;
+    background-image: url(./assets/bg-pattern.png);
+    background-color: #e7e7e799;
 }
 
 .prayer {
@@ -199,7 +200,8 @@ header {
 
 .section-4 {
     padding: 5rem .85rem;
-    background-color: #eaeaea;
+    background-image: url(./assets/bg-pattern.png);
+    background-color: #e7e7e799;
 }
 
 .image-list {
@@ -315,6 +317,29 @@ header {
     min-height: 250px;
 }
 
+/* 
+    Section 5
+*/
 .section-5 {
+    padding: 5rem 1.5rem;
+}
+
+/* 
+    Section 7
+*/
+.section-7 {
     padding: 5rem .85rem;
+    background-image: url(./assets/bg-pattern.png);
+    background-color: #e7e7e799;
+}
+
+.card-bank {
+    background-color: #eaeaea;
+    padding: 1rem .5rem;
+    border-radius: 10px;
+}
+
+.bank {
+    max-width: 150px;
+    display: block;
 }

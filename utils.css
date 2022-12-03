@@ -8,6 +8,10 @@
 /* 
     Fonts
 */
+.f--1 {
+    font-size: .8rem;
+}
+
 .f-1 {
     font-size: 1rem;
 }
@@ -103,5 +107,47 @@
 }
 
 .m-auto {
+    margin: auto;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 
+    Paddings
+*/
+.pl-1 {
+    padding-left: .5rem;
+}
+
+.pl-2 {
+    padding-left: 1rem;
+}
+
+.pl-3 {
+    padding-left: 1.5rem;
+}
+
+.pl-4 {
+    padding-left: 2rem;
+}
+
+.pl-5 {
+    padding-left: 2.5rem;
+}
+
+.pl-1 {
+    padding-left: .5rem;
+}
+
+/* 
+    Containers
+*/
+.container {
+    display: block;
+    width: 90%;
+    max-width: 1440px;
     margin: auto;
 }

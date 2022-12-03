@@ -6,11 +6,13 @@
     <title>Undangan | Pria &amp; Wanita</title>
 
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Modern+Antiqua" />
+    <link rel="stylesheet" href="components.css">
     <link rel="stylesheet" href="utils.css">
     <link rel="stylesheet" href="style.css">
 
     <link href="https://undangandigitalbali.com/assets/images/favicon.png" rel="icon">
 
+    <script src="./components.js" defer></script>
     <script src="./scripts.js" defer></script>
 </head>
 <body>
@@ -143,7 +145,49 @@
     </section>
     <section class="section-5">
         <h2 class="text-center mb-4">Mohon Doa Restu</h2>
-        
+        <form class="container" style="max-width: 1000px;">
+            <div class="input mb-3">
+                <label for="nama">Masukkan namamu</label>
+                <input type="text" id="nama" name="nama">
+            </div>
+            <div class="textarea mb-3">
+                <label for="ucapan">Berikan ucapanmu</label>
+                <textarea id="ucapan" name="ucapan" rows="5"></textarea>
+            </div>
+            <div class="radio-group mb-5" style="padding-left: .8rem;">
+                <div class="radio-label">Kamu akan hadir?</div>
+                <div class="radio mb-1">
+                    <div class="radio-input">
+                        <input type="radio" id="hadir" name="status" checked>
+                        <div class="radio-checkmark"></div>
+                    </div>
+                    <label for="hadir">Hadir</label>
+                </div>
+                <div class="radio mb-1">
+                    <div class="radio-input">
+                        <input type="radio" id="tidakHadir" name="status">
+                        <div class="radio-checkmark"></div>
+                    </div>
+                    <label for="tidakHadir">Tidak Hadir</label>
+                </div>
+                <div class="radio mb-1">
+                    <div class="radio-input">
+                        <input type="radio" id="masihRagu" name="status">
+                        <div class="radio-checkmark"></div>
+                    </div>
+                    <label for="masihRagu">Masih Ragu</label>
+                </div>
+            </div>
+            <button class="btn mx-auto f-1">KIRIM UCAPAN</button>
+        </form>
+    </section>
+    <section class="section-7">
+        <h2 class="text-center mb-4">Amplop Digital</h2>
+        <div class="container">
+            <p class="text-center mb-4">Doa Restu Anda merupakan karunia yang sangat berarti bagi kami.</p>
+            <p class="text-center mb-4">Dan jika memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi kado cashless melalui transfer.</p>
+            <button class="btn mx-auto f-1" type="button" data-modal="modalNoRekening">KIRIM AMPLOP</button>
+        </div>
     </section>
     
     <!-- Image Preview -->
@@ -155,6 +199,35 @@
         </div>
         <div class="image-prev">&langle;</div>
         <div class="image-next">&rangle;</div>
+    </div>
+
+    <!-- No Rekening Modal -->
+    <div class="modal" id="modalNoRekening">
+        <div class="overlay" data-close-modal="modalNoRekening"></div>
+        <div class="modal-card" style="max-width: 500px;">
+            <div class="modal-close" data-close-modal="modalNoRekening">&times;</div>
+            <div class="modal-body">
+                <p class="text-center mb-2">Silahkan melakukan transfer ke rekening berikut:</p>
+                <div class="card-bank mb-2">
+                    <img class="bank mx-auto" src="./assets/bni.png" alt="BNI">
+                    <div class="mb-2">
+                        <p class="f-1 text-center mb-1">0123456789</p>
+                        <p class="text-center">a/n Undangan Digital Bali</p>
+                    </div>
+                    <div class="alert alert-success text-center mb-2" data-alert="bni">No Rekening Sudah Ter-Copy</div>
+                    <button class="btn copy-rekening mx-auto" type="button" data-bank="bni">COPY NO REKENING</button>
+                </div>
+                <div class="card-bank">
+                    <img class="bank mx-auto" src="./assets/bca.png" alt="BCA">
+                    <div class="mb-2">
+                        <p class="f-1 text-center mb-1">0123456789</p>
+                        <p class="text-center">a/n Undangan Digital Bali</p>
+                    </div>
+                    <div class="alert alert-success text-center mb-2" data-alert="bca">No Rekening Sudah Ter-Copy</div>
+                    <button class="btn copy-rekening mx-auto" type="button" data-bank="bca">COPY NO REKENING</button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
