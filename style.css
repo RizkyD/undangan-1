@@ -318,3 +318,139 @@ header {
 .section-5 {
     padding: 5rem .85rem;
 }
+
+.section-6 {
+    padding: 70px 0;
+    position: relative;
+}
+
+.scroll {
+    max-height: 400px;
+    padding: 12px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-align: left;
+}
+
+.pray-detail {
+    margin-bottom: 24px;
+}
+
+.pray-text {
+    margin: 10px 10px 0;
+    background: #6b7d69;
+    color: #FFF;
+    padding: 20px 24px;
+    position: relative;
+    border: none;
+    border-radius: 12px;
+    font-size: 17px;
+    font-style: italic;
+}
+
+.pray-text::before, .pray-text::after {
+    content: "\201C";
+	position: absolute;
+	font-size: 20px;
+	padding: 10px;
+	line-height: 1;
+	color: #fff;
+}
+
+.pray-text::before {
+    top: 0;
+    left: 4px;
+}
+
+.pray-text::after {
+    content: "\201D";
+    right: 4px;
+    bottom: -.5em;
+}
+
+.pray-quote {
+    width: 0;
+    height: 0;
+    border-left: 0 solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 14px solid #6b7d69;
+    margin: 0 0 0 40px;
+    margin-bottom: 2px;
+}
+
+.pray-sender {
+    padding-left: 18px;
+    font-weight: 600;
+    margin-top: -4px;
+    font-size: 17px;
+}
+
+.attend-status {
+    font-size: 14px;
+    margin-top: -6px;
+    font-style: italic;
+}
+
+.section-8 {
+    padding: 30px 0;
+}
+
+.health-protocol {
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.health-protocol-header {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+.health-protocol-item {
+    width: 33.3%;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.health-protocol-item>img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    max-width: 100%;
+}
+
+.health-protocol-item>p {
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+footer>h2 {
+    margin-bottom: 40px;
+}
+
+.footer-social {
+    list-style: none;
+}
+
+.footer-social>li {
+    display: inline-block;
+    margin: 0 5px;
+}
